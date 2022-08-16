@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/fabicon.png" type="image/x-icon" />
+    <title>Home Page</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="flex justify-between px-52 absolute p-4 bg-slate-900 w-full">
+      <a class="text-white font-semibold text-xl" href="#"
+        ><span class="text-green-600">A</span>MAR
+        <span class="text-green-600">BANK</span></a
+      >
+      <ul class="flex">
+        <li>
+          <a
+            href="#"
+            class="text-white hover:text-green-500 transition-all duration-300 mx-5"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white hover:text-green-500 transition-all duration-300 mx-5"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white hover:text-green-500 transition-all duration-300 mx-5"
+            >Retail</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white hover:text-green-500 transition-all duration-300 mx-5"
+            >Digital Banking</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white hover:text-green-500 transition-all duration-300"
+            >Other Services</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header
+      class="h-screen bg-no-repeat bg-cover bg-center flex justify-center items-center"
+      style="
+        background-image: linear-gradient(
+            to left,
+            rgb(0, 0, 0, 0.8),
+            rgb(0, 0, 0, 0.9)
+          ),
+          url(./img/3.jpg);
+      "
+    >
+      <div>
+        <h1 class="text-white font-semibold text-6xl">
+          Welcome to <span class="text-green-600 font-bold">Our Website</span>
+        </h1>
+        <div class="text-center mt-8">
+          <button
+            id="signup-btn"
+            class="text-white text-2xl px-8 py-3 font-semibold align-middle rounded-md bg-green-600 hover:bg-green-700 transition duration-500"
+          >
+            Please Login
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- js file -->
+    <script src="./src/singup.js"></script>
+  </body>
+</html>

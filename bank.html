@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/fabicon.png" type="image/x-icon" />
+    <title>Amar Bank</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/17f1d2113e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-cover h-screen bg-no-repeat"
+    style="
+      background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)),
+        url(./img/1.jpg);
+    "
+  >
+    <button
+      id="signout-btn"
+      class="text-white text-xl absolute right-10 top-2 mt-4 px-4 py-3 bg-red-500 rounded-md"
+    >
+      <i class="fa-solid fa-right-from-bracket"></i> SignOut
+    </button>
+    <header>
+      <h1 class="text-5xl font-semibold text-white text-center p-5 mb-4">
+        Let's Get Some <span class="text-green-500">MooooooNey!!</span>
+      </h1>
+    </header>
+    <main>
+      <!-- deposit withdraw balance -->
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-6 w-9/12 mx-auto">
+          <div class="text-white text-center bg-slate-900 p-8 rounded-md">
+            <h4 class="text-3xl mb-2">Deposit</h4>
+            <h2 class="text-5xl text-green-500 font-semibold">
+              $<span id="deposit-amount">00</span>
+            </h2>
+          </div>
+          <div class="text-white text-center bg-green-600 p-8 rounded-md">
+            <h4 class="text-3xl mb-2">Withdraw</h4>
+            <h2 class="text-5xl text-slate-900 font-semibold">
+              $<span id="withdraw">00</span>
+            </h2>
+          </div>
+          <div class="text-white text-center bg-slate-900 p-8 rounded-md">
+            <h4 class="text-3xl mb-2">Balance</h4>
+            <h2 class="text-5xl text-green-500 font-semibold">
+              $<span id="balance">1240</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- deposit and withdraw -->
+      <section class="mt-16">
+        <div class="grid grid-cols-2 gap-6 w-9/12 mx-auto">
+          <div class="text-center bg-blue-800 p-12 rounded-md">
+            <h4 class="text-3xl mb-3 text-white">Please Deposit</h4>
+            <input
+              id="deposit-input"
+              class="block w-9/12 mx-auto text-lg h-11 p-4 rounded-md border-2 focus:outline-none border-green-500 mb-3"
+              type="text"
+              placeholder="$ Enter Deposit Amount"
+            />
+            <div class="text-center">
+              <button
+                id="deposit-btn"
+                class="text-white px-12 py-2 font-medium bg-green-500 rounded-md text-xl hover:bg-green-600 hover:transition duration-300"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+          <div class="text-center bg-yellow-700 p-12 rounded-md">
+            <h4 class="text-3xl mb-3 text-white">Please Withdraw</h4>
+            <input
+              id="withdraw-input"
+              class="block w-9/12 mx-auto text-lg h-11 p-4 rounded-md border-2 focus:outline-none border-slate-600 mb-3"
+              type="text"
+              placeholder="$ Enter Withdraw Amount"
+            />
+            <div class="text-center">
+              <button
+                id="withdraw-btn"
+                class="text-green-500 px-12 py-2 font-medium bg-slate-800 rounded-md text-xl hover:bg-slate-900 hover:transition duration-300"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS FILE -->
+    <script src="./src/deposit.js"></script>
+    <script src="./src/withdraw.js"></script>
+    <script src="./src/signout.js"></script>
+  </body>
+</html>

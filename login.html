@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/fabicon.png" type="image/x-icon" />
+    <title>Login Page</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900">
+    <header>
+      <h1 class="text-5xl font-semibold text-white text-center mt-28">
+        Welcome to our <span class="text-green-500">Login Page</span>
+      </h1>
+    </header>
+
+    <main>
+      <section>
+        <div class="bg-slate-800 w-1/2 mx-auto mt-10 rounded-lg p-8">
+          <h3 class="text-3xl text-center font-semibold mb-4 text-white">
+            LOGIN TO CONTINUE
+          </h3>
+          <div class="mt-10">
+            <input
+              id="email-input"
+              class="block w-9/12 mx-auto text-lg h-11 p-4 rounded-md border-2 focus:outline-none border-green-500 mb-3"
+              type="email"
+              placeholder="e: sazal@gmail.com"
+            />
+            <input
+              id="password-input"
+              class="block w-9/12 mx-auto text-lg h-11 p-4 rounded-md border-2 focus:outline-none border-green-500 mb-5"
+              type="password"
+              placeholder="p: sazal"
+            />
+            <div class="text-center">
+              <button
+                id="submit-btn"
+                class="text-white px-12 py-2 bg-green-500 rounded-md text-xl hover:bg-green-600 hover:transition duration-300"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- JS FILE -->
+    <script src="./src/login.js"></script>
+  </body>
+</html>
